@@ -1,0 +1,34 @@
+{
+  "name": "speech-recognition",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "start": "ts-node src/app.ts",
+    "build": "tsc"
+  },
+  "author": "Bukgeuk_",
+  "license": "MIT",
+  "description": "discord speech-recognition music bot",
+  "dependencies": {
+    "@discordjs/rest": "^0.2.0-canary.0",
+    "@discordjs/voice": "^0.7.5",
+    "@google-cloud/speech": "^4.9.0",
+    "discord-api-types": "^0.26.0",
+    "dotenv": "^10.0.0",
+    "ytdl-core": "^4.9.2"
+  },
+  "devDependencies": {
+    "@discordjs/opus": "^0.5.3",
+    "axios": "^0.24.0",
+    "discord.js": "^13.5.0",
+    "ffmpeg-static": "^4.4.0",
+    "libsodium-wrappers": "^0.7.9",
+    "music-metadata": "^7.11.4",
+    "prism-media": "^1.3.2",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.4"
+  }
+}
