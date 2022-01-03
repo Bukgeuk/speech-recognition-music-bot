@@ -151,11 +151,12 @@ export async function showQueue(userId: string, guildId: string) {
     const user = await client.users.fetch(userId)
     const guild = await client.guilds.fetch(guildId)
     const q = queueList.get(guildId)!
+    const icon = guild.iconURL()
 
     const embed = new MessageEmbed()
     .setColor('#FF0000')
     .setTitle(`${guild.name}의 재생 목록`)
-    .setThumbnail(guild.icon ? guild.icon : '')
+    .setThumbnail(icon ? icon : '')
     .setDescription(`${q.length()}곡 대기 중`)
 
     q.array().forEach((info, idx) => {
